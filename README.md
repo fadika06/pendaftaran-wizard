@@ -72,14 +72,14 @@ $ php artisan vendor:publish --tag=pendaftaran-wizard-assets
     children: [
         //== ...
         {
-            path: '/admin/pendaftaran/create',
+            path: '/admin/pendaftaran-wizard/create',
             components: {
-                main: resolve => require(['./components/bantenprov/pendaftaran/PendaftaranWizard.add.vue'], resolve),
+                main: resolve => require(['./components/bantenprov/pendaftaran-wizard/PendaftaranWizard.add.vue'], resolve),
                 navbar: resolve => require(['./components/Navbar.vue'], resolve),
                 sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
             },
             meta: {
-                title: "Pendaftaran Wizard"
+                title: "Formulir Pendaftaran"
             }
         },
          
@@ -98,8 +98,8 @@ $ php artisan vendor:publish --tag=pendaftaran-wizard-assets
     childItem: [
         //== ...
         {
-        name: 'Pendaftaran Wizard',
-        link: '/admin/pendaftaran/create',
+        name: 'Formulir Pendaftaran',
+        link: '/admin/pendaftaran-wizard/create',
         icon: 'fa fa-angle-double-right'
         },
         //== ...
