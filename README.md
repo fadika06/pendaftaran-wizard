@@ -73,6 +73,7 @@ $ php artisan vendor:publish --tag=pendaftaran-wizard-assets
         //== ...
         {
             path: '/admin/pendaftaran-wizard/create',
+            name: 'pendaftaran-wizard',
             components: {
                 main: resolve => require(['./components/bantenprov/pendaftaran-wizard/PendaftaranWizard.add.vue'], resolve),
                 navbar: resolve => require(['./components/Navbar.vue'], resolve),
